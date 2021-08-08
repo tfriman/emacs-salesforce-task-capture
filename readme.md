@@ -34,7 +34,7 @@ sfdx config:set defaultusername=testforce
 
 ## Quick start
 
-![Screencast](images/main.svg "Screencast")
+![Screencast](images/basic-overview.svg "Screencast")
 
 ## Usage
 
@@ -63,12 +63,6 @@ Currently only one contact can be selected.
 
 This will call sfdx cli and store the data in SFDC. You will have link to that entry visible on the bottom of the screen. You can refresh the view by selecting "Reset Form", you last entry will be the first in "Previous entries".
 
-## Usability tweaks
-
-All entries are stored on you local disk, see ```M-x describe-variable RET salesforce-task-history-file```for the location of the file. From entries previous accounts list is populated for autofill, same for previous opportunities. Also used contacts are parsed from the file and obviously previous entries.
-
-Previous entries serve for two purposes: they have the link toward sfdc web ui for the entry and also they have the "Copy me" button which copies entry as a template.
-
 ## Configuration
 
 Configuration follows Emacs "Easy Customization Interface" so you can customize things easily:
@@ -78,6 +72,18 @@ Configuration follows Emacs "Easy Customization Interface" so you can customize 
 You probably have to tweak at least
 
 ```Salesforce Task Sfdc Url```, the format is like "https://d09000009gcjleai-dev-ed.my.salesforce.com"
+
+## Usability tweaks
+
+All entries are stored on you local disk, see ```M-x describe-variable RET salesforce-task-history-file```for the location of the file. From entries previous accounts list is populated for autofill, same for previous opportunities. Also used contacts are parsed from the file and obviously previous entries.
+
+Previous entries serve for two purposes: they have the link toward sfdc web ui for the entry and also they have the "Copy me" button which copies entry as a template.
+
+### Tweaks left out
+
+There is an Red Hat internal version containing Red Hat specific SFDC fields. If you are a Red Hatter, reach out to me to find out where that is located.
+
+There are also easy ways to add filters to fields. Red Hat internal version has filtering for renewal opportunities and also accounts are filtered by country. These are left out for brevity.
 
 # License
 
