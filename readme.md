@@ -36,7 +36,7 @@ sfdx config:set defaultusername=testforce
 
 ![Screencast](images/basic-overview.svg "Screencast")
 
-There is an asciinema recording [here](https://asciinema.org/a/Ypjmw4GGkRVx4cHlqerrHrVxA "Asciinema rec")
+There is an asciinema recording [here](https://asciinema.org/a/Ypjmw4GGkRVx4cHlqerrHrVxA "Asciinema rec").
 
 ## Usage
 
@@ -73,7 +73,7 @@ Configuration follows Emacs "Easy Customization Interface" so you can customize 
 
 You probably have to tweak at least
 
-```Salesforce Task Sfdc Url```, the format is like "https://d09000009gcjleai-dev-ed.my.salesforce.com"
+```Salesforce Task Sfdc Url```, the format is like "https://d09000009gcjleai-dev-ed.my.salesforce.com/". Remember to add the trailing slash.
 
 ## Usability tweaks
 
@@ -93,7 +93,7 @@ MIT
 
 # Contributions
 
-are welcomed :)
+are welcomed :) See issues!
 
 # Thanks
 
