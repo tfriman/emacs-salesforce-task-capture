@@ -5,7 +5,7 @@ A way to capture Salesforce Tasks without leaving Emacs. Search accounts, opport
 Disclaimers: my first Emacs major mode. No tests. Manually tested with Emacs 27.2. on MacOS 11.5.
 
 ## Prerequisites
-Use ``brew install sfdx``` or like.
+Use ```brew install sfdx``` or like.
 
 Or download and install the sfdx CLI: https://developer.salesforce.com/tools/sfdxcli
 
