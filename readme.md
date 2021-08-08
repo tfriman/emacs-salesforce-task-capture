@@ -10,19 +10,25 @@ Or use brew install sfdx or like.
 
 ### Initiate a new project:
 
-```   cd ~ &&  sfdx force:project:create -n salesforce```
+```
+cd ~ &&  sfdx force:project:create -n salesforce
+```
 
 Creates ~/salesforce dir.
 
 ### Authenticate via the web page which pops up
 
-```cd ~/salesforce
-sfdx force:auth:web:login --instanceurl https://xxx.salesforce.com --setalias testforce```
+```
+cd ~/salesforce
+sfdx force:auth:web:login --instanceurl https://xxx.salesforce.com --setalias testforce
+```
 
 ### Configure sfdx
 
-```cd ~/salesforce
-sfdx config:set defaultusername=testforce```
+```
+cd ~/salesforce
+sfdx config:set defaultusername=testforce
+```
 
 
 ## Quick start
