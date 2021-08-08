@@ -1,5 +1,5 @@
 ;;; -*- lexical-binding: t -*-
-;; salesforce-task-mode.el -- Add pre-sales task entries using sfdx cli tool
+;; salesforce-task-mode.el -- Add pre-sales task entries using sfdx cli tool. See https://github.com/tfriman/emacs-salesforce-task-capture for instructions.
 
 (require 'subr-x)
 (require 'widget)
@@ -12,8 +12,8 @@
 
 (defgroup salesforce-task-configuration nil "Salesforce Task Capture Mode Configurations." )
 
-(defcustom salesforce-task-sfdc-url "https://d09000009gcjleai-dev-ed.my.salesforce.com"
-  "Url to contact to get SFDC connection."
+(defcustom salesforce-task-sfdc-url "https://d09000009gcjleai-dev-ed.my.salesforce.com/"
+  "Url with trailing slash to contact to get SFDC connection."
   :group 'salesforce-task-configuration
   :type '(string))
 

@@ -1,6 +1,6 @@
 # Emacs major mode for Salesforce Task capture
 
-Search accounts, opportunities and contacts using ```sfdx``` cli tooling underneath. Enter task details and submit. Re-use previous entries as a template.
+A way to capture Salesforce Tasks without leaving Emacs. Search accounts, opportunities and contacts using ```sfdx``` cli tooling underneath. Enter task details and submit. Re-use previous entries as a template.
 
 Disclaimers: my first Emacs major mode. No tests. Manually tested with Emacs 27.2. on MacOS 11.5.
 
