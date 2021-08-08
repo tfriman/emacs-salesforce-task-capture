@@ -87,6 +87,35 @@ There is an Red Hat internal version containing Red Hat specific SFDC fields. If
 
 There are also easy ways to add filters to fields. Red Hat internal version has filtering for renewal opportunities and also accounts are filtered by country. These are left out for brevity.
 
+# SFDC development helpers
+
+Things you need to actually try this out.
+
+## Create a test account
+
+Create account in http://developer.salesforce.com
+
+## Login to your account
+```sfdx force:auth:web:login --instanceurl https://d09000009gcjleai-dev-ed.my.salesforce.com --setalias testforce```
+
+This should open up your default browser and say everything is fine.
+
+## Digging out your local task fields
+
+In order to actually use this at your daily job you probably have to add your company specific fields.
+
+To find out those, they _may_ end with __c suffix:
+
+```sfdx force:schema:sobject:describe -s Task -u testforce > task.json```
+
+Find out the recordTypeId for task:
+```jq ".recordTypeInfos[].recordTypeId" task.json```
+
+This is needed with create command, format is like this:
+
+```sfdx force:data:record:create --targetusername testforce --sobjecttype  Task -v "Subject='This is subject'  ActivityDate=2021-08-08  Status='Completed'  Priority='Normal'  WhoId=0030900000RZ6KHAA1  WhatId=006090000092tvxAAA  Description='This is description.'  recordTypeId=012000000000000AAA" --json```
+
+
 # License
 
 MIT
