@@ -36,6 +36,8 @@ sfdx config:set defaultusername=testforce
 
 ![Screencast](images/basic-overview.svg "Screencast")
 
+There is an asciinema recording ![here](https://asciinema.org/a/Ypjmw4GGkRVx4cHlqerrHrVxA).
+
 ## Usage
 
 ### Starting
