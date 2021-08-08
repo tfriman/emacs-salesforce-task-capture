@@ -185,7 +185,7 @@
 				   (widget-set-field-and-deactivate widget-show-opportunity oppo))))
   (lf)
 
-  (setq widget-show-opportunity (deactive-field 'opportunity "Opportunity" 80))
+  (setq widget-show-opportunity (deactive-field 'opportunity "Selected opportunity" 80))
   (lf)
   (button "Search contacts" (lambda (&rest ignore)
 			      (let ((contact

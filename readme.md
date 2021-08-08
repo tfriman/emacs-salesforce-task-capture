@@ -5,8 +5,9 @@ A way to capture Salesforce Tasks without leaving Emacs. Search accounts, opport
 Disclaimers: my first Emacs major mode. No tests. Manually tested with Emacs 27.2. on MacOS 11.5.
 
 ## Prerequisites
-Download and install the sfdx CLI: https://developer.salesforce.com/tools/sfdxcli
-Or use brew install sfdx or like.
+Use ``brew install sfdx``` or like.
+
+Or download and install the sfdx CLI: https://developer.salesforce.com/tools/sfdxcli
 
 ### Initiate a new project:
 
@@ -14,7 +15,7 @@ Or use brew install sfdx or like.
 cd ~ &&  sfdx force:project:create -n salesforce
 ```
 
-Creates ~/salesforce dir.
+Creates ~/salesforce directory.
 
 ### Authenticate via the web page which pops up
 
@@ -23,6 +24,7 @@ cd ~/salesforce
 sfdx force:auth:web:login --instanceurl https://xxx.salesforce.com --setalias testforce
 ```
 
+
 ### Configure sfdx
 
 ```
@@ -30,12 +32,9 @@ cd ~/salesforce
 sfdx config:set defaultusername=testforce
 ```
 
-
 ## Quick start
 
-![Screencast](images/sample.svg "Screencast")
-
-![Screencast](images/foo.png "Screencast")
+![Screencast](images/main.svg "Screencast")
 
 ## Usage
 
@@ -54,7 +53,7 @@ Account is a mandatory information for task. You can search for _everything_ or 
 
 ### Select opportunity to be used (Optional)
 
-Same search procedure as with accounts. This information is not mandatory though, if left out, task will be attached to the account.
+This information is not mandatory though, if left out, task will be attached to count.
 
 ### Select contact (Optional)
 
