@@ -2,7 +2,13 @@
 
 A way to capture Salesforce Tasks without leaving Emacs. Search accounts, opportunities and contacts using ```sfdx``` cli tooling underneath. Enter task details and submit. Re-use previous entries as a template.
 
-Disclaimers: my first Emacs major mode. No tests. Manually tested with Emacs 27.2. on MacOS 11.5.
+Disclaimers: my first Emacs major mode. No tests. Manually tested with Emacs 27.2. on MacOS 11.5 and sfdx-cli/7.110.0 darwin-x64 node-v14.17.3.
+
+## Design choices made
+
+I did not have REST API access to SFDC so had to revert to sfdx cli tool. It handles the oauth dance with SFDC and gives back the responses in JSON format. JSON parsing with Emacs is a breeze and probably reusable if someone wants to ditch sfdx and switch to pure REST API approach.
+
+One important thing: because the shell call response is captured as is, make sure you have your sfdx updated frequently. sfdx spams stdout or stderr with "newer version found" or something like that and that ruins the parsing logic.
 
 ## Prerequisites
 Use ```brew install sfdx``` or like.
