@@ -343,8 +343,10 @@
 		  " WhoId=" (gv 'contactid) " "
 		  " WhatId=" (get-first-word (gv-or 'opportunity 'account)) " "
 		  " Description='" (gv 'description) "' "
+		  " recordTypeId=012000000000000AAA"
 		  "\""
 		  " --json"))
+	 (ignore (message "XXX %S" create-string))
 	 (response (shell-command-to-string create-string))
 	 (jsonresponse (json-parse-string response))
 	 (statuscode (gethash "status" jsonresponse)))
